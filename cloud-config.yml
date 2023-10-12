@@ -2,10 +2,7 @@ hostname: dockerhost.local
 ssh_authorized_keys:
   - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILI46QtvV7XZAMwH7zMD3PaQMPjcM9vYZhqdFvf2IKfV alexandre pitre@PC-AMD
 rancher:
-  state:
-    autoformat:
-    - /dev/sda
-#  network:
-#    interfaces:
-#      eth0:
-#        dhcp: true
+  network:
+    interfaces:
+      eth0:
+        dhcp: true
